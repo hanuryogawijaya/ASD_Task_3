@@ -18,7 +18,11 @@ address alokasi(infotype x) {
 
     address P;
     //-------------your code here-------------
-    // NIM :
+    // NIM : 1301164153
+    P = new elmlist;
+    info(P) = x;
+    next(P) = NULL;
+
 
 
     //----------------------------------------
@@ -107,7 +111,24 @@ void printInfo(List L) {
     * FS : menampilkan info seluruh elemen list L
     */
     //-------------your code here-------------
-    // NIM :
+    // NIM : 1301164153
+    address P;
+    infotype X;
+    P = first(L);
+    while (P != NULL){
+        x = info(P);
+        cout << "id :";
+        cout << X.id <<endl;
+        cout << "nama : ";
+        cout << X.nama_org <<endl;
+        cout << "jabatan : ";
+        cout << X.jabatan << endl;
+        cout << "nama profesi :";
+        cout << X.nama_prof <<endl;
+        cout << "umur :";
+        cout << X.umur <<endl;
+        P = next(P);
+    }
 
 
     //----------------------------------------
@@ -121,7 +142,11 @@ void insertAfter(address Prec, address P) {
     *      ditunjuk pointer Prec
     */
     //-------------your code here-------------
-    // NIM :
+    // NIM : 1301164153
+    if ((Prec != NULL) && (P != NULL)){
+        next(P) = next(Prec);
+        next(Prec) = P;
+    }
 
 
     //----------------------------------------
